@@ -1,3 +1,21 @@
+db:
+  tables:
+    user_tb:
+      description: 用户表
+      columns:
+        id: bigint(主键)
+        username: varchar(用户名)
+        password: varchar(密码)
+        role: varchar(角色)
+
+    score_tb:
+      description: 成绩表
+      columns:
+        id: bigint(主键)
+        student_name: varchar(学生姓名)
+        subject: varchar(科目)
+        score: int(成绩)
+        exam_time: date(考试时间)
 ---
 
 ## 🗄 数据库设计
