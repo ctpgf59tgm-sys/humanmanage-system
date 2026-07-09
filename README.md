@@ -1,28 +1,62 @@
-# 人力资源管理系统 (HumanManage)
+---
 
-> 一个基于 Spring Boot 的简易人力资源管理系统，用于管理员工信息、部门及考勤记录。
+## 🗄 数据库设计
 
-## ✨ 主要功能
-- 员工信息的增删改查（CRUD）
-- 基于 JWT 的登录认证（正在集成中）
-- 部门信息管理
+### user_tb（用户表）
+| 字段 | 类型 | 说明 |
+|----|----|----|
+| id | bigint | 主键 |
+| username | varchar | 用户名 |
+| password | varchar | 密码 |
+| role | varchar | 角色 |
 
-## 🛠 技术栈
-- **后端框架**: Spring Boot 2.x
-- **数据库**: MySQL 8.0
-- **权限认证**: JWT (Java-JWT)
-- **缓存**: Redis (计划接入)
-- **构建工具**: Maven
+### score_tb（成绩表）
+| 字段 | 类型 | 说明 |
+|----|----|----|
+| id | bigint | 主键 |
+| student_name | varchar | 学生姓名 |
+| subject | varchar | 科目 |
+| score | int | 成绩 |
+| exam_time | date | 考试时间 |
 
-## 🚀 如何运行（让面试官能跑起来）
-1. 克隆项目：`git clone https://github.com/你的用户名/my-project.git`
-2. 导入 IDEA，等待 Maven 依赖下载完成。
-3. 修改 `application.yml` 中的数据库密码。
-4. 运行 `HumanManageApplication.java` 的 main 方法。
-5. 访问 `http://localhost:8080`。
+---
 
-## 📌 目前进度
-- [x] 员工管理模块
-- [x] 数据库设计
-- [ ] JWT 登录集成（开发中）
-- [ ] 部门管理模块
+## 🔮 可扩展方向
+
+- ✅ JWT 登录鉴权
+- ✅ 文件上传（Excel 导入成绩）
+- ✅ RBAC 权限控制
+- ✅ ECharts 成绩统计图表
+- ✅ Redis 缓存优化
+- ✅ Swagger 接口文档
+- ✅ Docker 容器化部署
+- ✅ 单元测试（JUnit）
+
+---
+
+## 📚 实训知识点
+
+- Spring Boot 项目搭建
+- RESTful API 设计规范
+- MyBatis‑Plus CRUD
+- Vue 组件化开发
+- Axios 前后端通信
+- 跨域问题解决
+- 统一返回结果封装
+- 全局异常处理
+- 分页查询实现
+- 前后端联调流程
+
+---
+
+## 👨‍💻 开发信息
+
+- 作者：[Your Name]
+- 时间：2026 年
+- 用途：课程设计 / 实训项目
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
