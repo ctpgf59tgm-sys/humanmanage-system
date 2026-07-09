@@ -3,21 +3,23 @@
 ## 🗄 数据库设计
 
 ### user_tb（用户表）
-| 字段 | 类型 | 说明 |
-|----|----|----|
-| id | bigint | 主键 |
-| username | varchar | 用户名 |
-| password | varchar | 密码 |
-| role | varchar | 角色 |
+
+| 字段     | 类型      | 说明     |
+|--------|-----------|----------|
+| id     | bigint    | 主键     |
+| username | varchar | 用户名   |
+| password | varchar | 密码     |
+| role   | varchar   | 角色     |
 
 ### score_tb（成绩表）
-| 字段 | 类型 | 说明 |
-|----|----|----|
-| id | bigint | 主键 |
-| student_name | varchar | 学生姓名 |
-| subject | varchar | 科目 |
-| score | int | 成绩 |
-| exam_time | date | 考试时间 |
+
+| 字段        | 类型      | 说明       |
+|-----------|-----------|------------|
+| id        | bigint    | 主键       |
+| student_name | varchar | 学生姓名   |
+| subject   | varchar   | 科目       |
+| score     | int       | 成绩       |
+| exam_time | date      | 考试时间   |
 
 ---
 
